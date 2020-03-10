@@ -1,0 +1,11 @@
+---
+
+- name: Add OpenvpnAS apt signing key
+  apt_key:
+    url: https://as-repository.openvpn.net/as-repo-public.gpg
+    state: present
+
+- apt_repository:
+    repo: deb http://as-repository.openvpn.net/as/debian bionic
+    state: present
+    filename: openvpn-as-repo

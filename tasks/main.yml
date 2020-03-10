@@ -23,11 +23,6 @@
   register: dpkg_openvpn_as
   changed_when: false
 
-- name: install openvpn-AS
-  apt:
-    deb: "{{openvpn_installer_url}}"
-  when: "'ii' not in dpkg_openvpn_as.stdout"
-
 - name: change openvpn user password
   user:
     name: openvpn

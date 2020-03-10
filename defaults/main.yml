@@ -5,7 +5,6 @@ openvpn_config_db: sqlite:///~/db/config.db
 openvpn_db_password: test
 openvpn_db_port: 3306
 openvpn_db_user: test
-openvpn_installer_url: "http://swupdate.openvpn.org/as/openvpn-as-{{openvpn_as_version}}-{{openvpn_os}}.amd_64.deb"
 openvpn_ldap: false
 openvpn_ldap_password: blah
 openvpn_ldap_port: 636
